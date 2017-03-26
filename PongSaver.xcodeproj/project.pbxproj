@@ -190,7 +190,6 @@
 				8D255AC90486D3F9007BF209 /* Resources */,
 				8D255ACB0486D3F9007BF209 /* Sources */,
 				8D255ACD0486D3F9007BF209 /* Frameworks */,
-				5246A7F6195524B300326F87 /* Labeler */,
 			);
 			buildRules = (
 				C2B83B91093A197C00975D56 /* PBXBuildRule */,
@@ -242,24 +241,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5246A7F6195524B300326F87 /* Labeler */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Labeler;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "python \"$SRCROOT/../../scripts/bundlelabeler.py\" \"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D255ACB0486D3F9007BF209 /* Sources */ = {
