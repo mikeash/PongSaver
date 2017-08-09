@@ -209,6 +209,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					8D255AC50486D3F9007BF209 = {
+						DevelopmentTeam = NM4ZX45CU5;
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = EF7AD73108BB986600CE4634 /* Build configuration list for PBXProject "PongSaver" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -275,10 +281,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5289BA17194BDC5B00C3A5DC /* Basic Debug FAT.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = PongSaver;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = "Debug FAT";
@@ -293,10 +302,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5289BA19194BDC5B00C3A5DC /* Basic Release FAT.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = NM4ZX45CU5;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = PongSaver;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = "Release FAT";
@@ -305,10 +317,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5289BA18194BDC5B00C3A5DC /* Basic Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = PongSaver;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -317,10 +332,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5289BA1B194BDC5B00C3A5DC /* Basic Release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				DEVELOPMENT_TEAM = NM4ZX45CU5;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = PongSaver;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
