@@ -15,7 +15,7 @@ codesign -vvv --deep --strict "build/Release/PongSaver.saver"
 (cd build/Release && zip -r "../PongSaver.saver.zip" "PongSaver.saver" && echo "First zip Successful" || echo "Zip FAILED")
 
 # Submit to apple for notarization
-xcrun notarytool submit "build/PongSaver.saver.zip" --team-id "SG6DU88C24" --apple-id "$APPLE_ID" --password "$APP_SPECIFIC_PASSWORD" --wait
+xcrun notarytool submit "build/PongSaver.saver.zip" --team-id "$TEAM_ID" --apple-id "$APPLE_ID" --password "$APP_SPECIFIC_PASSWORD" --wait
 
 # # For debugging failed notarization
 # # xcrun notarytool log --team-id $TEAM_ID --apple-id $APPLE_ID --password $APP_SPECIFIC_PASSWORD d5fasdfd-6db9-4e0c-b973-dff3ddfs2b57
