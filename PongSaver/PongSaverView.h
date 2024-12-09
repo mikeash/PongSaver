@@ -30,6 +30,7 @@
     
     NSRect digitSegments[13];
     
+    BOOL isAnimating;
     BOOL shouldAnimate;
     
     BOOL isTwelveHour;
@@ -44,6 +45,7 @@
     
 }
 
+- (void)receive:(NSNotification*)notification;
 - (void)resetBall;
 - (void)setDigitSegmentRects;
 

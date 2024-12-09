@@ -38,11 +38,28 @@ static const int *kDigitSegments[] = { kDigitSegment0, kDigitSegment1, kDigitSeg
 
 + (void)initialize
 {
-    [[ScreenSaverDefaults defaultsForModuleWithName: [[NSBundle bundleForClass: [self class]] bundleIdentifier]] registerDefaults:
-     [NSDictionary dictionaryWithObjectsAndKeys:
-      [NSNumber numberWithBool: YES], @"hasSound",
-      [NSNumber numberWithBool: NO], @"isTwelveHour",
-      nil]];
+    [[ScreenSaverDefaults defaultsForModuleWithName:
+      [[NSBundle bundleForClass: [self class]] bundleIdentifier]]
+     registerDefaults:
+         [NSDictionary dictionaryWithObjectsAndKeys:
+          [NSNumber numberWithBool: YES], @"hasSound",
+          [NSNumber numberWithBool: NO], @"isTwelveHour",
+          nil]];
+}
+
+- (void)_setNotifications
+{
+    [[NSDistributedNotificationCenter defaultCenter] addObserver: self
+                                                        selector: @selector(receive:)
+                                                            name: @"com.apple.screenIsUnlocked"
+                                                          object: nil
+    ];
+}
+
+- (void)receive:(NSNotification *)notification
+{
+    [self stopAnimation];
+    exit(0);
 }
 
 - (void)_loadFromDefaults
@@ -77,10 +94,10 @@ static const int *kDigitSegments[] = { kDigitSegment0, kDigitSegment1, kDigitSeg
         scores[1] = (int)[timeComponents hour];
         
         [self resetBall];
-        
         [self setDigitSegmentRects];
-        
         [self _loadFromDefaults];
+        if (!isPreview)
+            [self _setNotifications];
         
         NSString *launchPath = [[NSBundle bundleForClass: [self class]] pathForSoundResource: @"launch"];
         NSString *reboundPath = [[NSBundle bundleForClass: [self class]] pathForSoundResource: @"rebound"];
@@ -93,8 +110,10 @@ static const int *kDigitSegments[] = { kDigitSegment0, kDigitSegment1, kDigitSeg
 
 - (void)startAnimation
 {
-    [super startAnimation];
+    if (isAnimating)
+        return;
     
+    [super startAnimation];
     [self _loadFromDefaults];
     
     shouldAnimate = [self isPreview] || playOnAllScreens || [[[self window] screen] isEqual: [NSScreen mainScreen]];
@@ -103,15 +122,21 @@ static const int *kDigitSegments[] = { kDigitSegment0, kDigitSegment1, kDigitSeg
     
     if( shouldAnimate )
         idleTimer = [NSTimer scheduledTimerWithTimeInterval: kIdleResetInterval target: self selector: @selector( doIdle: ) userInfo: nil repeats: YES];
+    
+    isAnimating = YES;
 }
 
 - (void)stopAnimation
 {
-    [super stopAnimation];
+    if (!isAnimating)
+        return;
     
+    [super stopAnimation];
     [idleTimer invalidate];
     idleTimer = nil;
     [configureObjController setContent: nil];
+    
+    isAnimating = NO;
 }
 
 - (float)paddleMargin
