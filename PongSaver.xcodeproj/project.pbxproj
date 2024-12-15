@@ -3,384 +3,321 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		529BA65915707A5B0081FBA9 /* Configure.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529BA65715707A5B0081FBA9 /* Configure.xib */; };
-		8D255ACC0486D3F9007BF209 /* PongSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F500797A0118B23001CA0E54 /* PongSaverView.m */; };
-		8D255ACE0486D3F9007BF209 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
-		8D255ACF0486D3F9007BF209 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F27B2DFFEEEFEF11CA0E56 /* ScreenSaver.framework */; };
-		C2701BBB0A5E0B5800E7E7EF /* rebound.aiff in Resources */ = {isa = PBXBuildFile; fileRef = C2701BB90A5E0B5800E7E7EF /* rebound.aiff */; };
-		C2701BBC0A5E0B5800E7E7EF /* launch.aiff in Resources */ = {isa = PBXBuildFile; fileRef = C2701BBA0A5E0B5800E7E7EF /* launch.aiff */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXBuildRule section */
-		C2B83B91093A197C00975D56 /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.gcc.4_0;
-			fileType = sourcecode.c;
-			isEditable = 1;
-			outputFiles = (
-			);
-		};
-/* End PBXBuildRule section */
-
 /* Begin PBXFileReference section */
-		06F27B2DFFEEEFEF11CA0E56 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = /System/Library/Frameworks/ScreenSaver.framework; sourceTree = "<absolute>"; };
-		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		5289BA10194BDC1700C3A5DC /* buildrules.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = buildrules.py; sourceTree = "<group>"; };
-		5289BA12194BDC5B00C3A5DC /* Application Debug FAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Application Debug FAT.xcconfig"; sourceTree = "<group>"; };
-		5289BA13194BDC5B00C3A5DC /* Application Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Application Debug.xcconfig"; sourceTree = "<group>"; };
-		5289BA14194BDC5B00C3A5DC /* Application Release FAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Application Release FAT.xcconfig"; sourceTree = "<group>"; };
-		5289BA15194BDC5B00C3A5DC /* Application Release MAS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Application Release MAS.xcconfig"; sourceTree = "<group>"; };
-		5289BA16194BDC5B00C3A5DC /* Application Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Application Release.xcconfig"; sourceTree = "<group>"; };
-		5289BA17194BDC5B00C3A5DC /* Basic Debug FAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Basic Debug FAT.xcconfig"; sourceTree = "<group>"; };
-		5289BA18194BDC5B00C3A5DC /* Basic Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Basic Debug.xcconfig"; sourceTree = "<group>"; };
-		5289BA19194BDC5B00C3A5DC /* Basic Release FAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Basic Release FAT.xcconfig"; sourceTree = "<group>"; };
-		5289BA1A194BDC5B00C3A5DC /* Basic Release MAS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Basic Release MAS.xcconfig"; sourceTree = "<group>"; };
-		5289BA1B194BDC5B00C3A5DC /* Basic Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Basic Release.xcconfig"; sourceTree = "<group>"; };
-		5289BA1C194BDC5B00C3A5DC /* Dylib Debug FAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dylib Debug FAT.xcconfig"; sourceTree = "<group>"; };
-		5289BA1D194BDC5B00C3A5DC /* Dylib Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dylib Debug.xcconfig"; sourceTree = "<group>"; };
-		5289BA1E194BDC5B00C3A5DC /* Dylib Release FAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dylib Release FAT.xcconfig"; sourceTree = "<group>"; };
-		5289BA1F194BDC5B00C3A5DC /* Dylib Release MAS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dylib Release MAS.xcconfig"; sourceTree = "<group>"; };
-		5289BA20194BDC5B00C3A5DC /* Dylib Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dylib Release.xcconfig"; sourceTree = "<group>"; };
-		5289BA21194BDC5B00C3A5DC /* Framework Debug FAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework Debug FAT.xcconfig"; sourceTree = "<group>"; };
-		5289BA22194BDC5B00C3A5DC /* Framework Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework Debug.xcconfig"; sourceTree = "<group>"; };
-		5289BA23194BDC5B00C3A5DC /* Framework Release FAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework Release FAT.xcconfig"; sourceTree = "<group>"; };
-		5289BA24194BDC5B00C3A5DC /* Framework Release MAS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework Release MAS.xcconfig"; sourceTree = "<group>"; };
-		5289BA25194BDC5C00C3A5DC /* Framework Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework Release.xcconfig"; sourceTree = "<group>"; };
-		5289BA26194BDC5C00C3A5DC /* Tests Debug FAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Tests Debug FAT.xcconfig"; sourceTree = "<group>"; };
-		5289BA27194BDC5C00C3A5DC /* Tests Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Tests Debug.xcconfig"; sourceTree = "<group>"; };
-		5289BA28194BDC5C00C3A5DC /* Tests Release FAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Tests Release FAT.xcconfig"; sourceTree = "<group>"; };
-		5289BA29194BDC5C00C3A5DC /* Tests Release MAS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Tests Release MAS.xcconfig"; sourceTree = "<group>"; };
-		5289BA2A194BDC5C00C3A5DC /* Tests Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Tests Release.xcconfig"; sourceTree = "<group>"; };
-		529BA65815707A5B0081FBA9 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Configure.xib; sourceTree = "<group>"; };
-		8D255AD20486D3F9007BF209 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D255AD30486D3F9007BF209 /* PongSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2701BB90A5E0B5800E7E7EF /* rebound.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = rebound.aiff; sourceTree = "<group>"; };
-		C2701BBA0A5E0B5800E7E7EF /* launch.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = launch.aiff; sourceTree = "<group>"; };
-		F50079790118B23001CA0E54 /* PongSaverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PongSaverView.h; sourceTree = "<group>"; };
-		F500797A0118B23001CA0E54 /* PongSaverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PongSaverView.m; sourceTree = "<group>"; };
+		C636C8792D035BFB0057AB18 /* PongSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C636C87B2D035BFB0057AB18 /* PongSaver */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PongSaver;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		8D255ACD0486D3F9007BF209 /* Frameworks */ = {
+		C636C8762D035BFB0057AB18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D255ACE0486D3F9007BF209 /* Cocoa.framework in Frameworks */,
-				8D255ACF0486D3F9007BF209 /* ScreenSaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		089C166AFE841209C02AAC07 /* PongSaver */ = {
+		C636C86F2D035BFB0057AB18 = {
 			isa = PBXGroup;
 			children = (
-				5289BA10194BDC1700C3A5DC /* buildrules.py */,
-				529BA65715707A5B0081FBA9 /* Configure.xib */,
-				08FB77AFFE84173DC02AAC07 /* Classes */,
-				089C167CFE841241C02AAC07 /* Resources */,
-				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
-				19C28FB8FE9D52D311CA2CBB /* Products */,
-				5289BA11194BDC5B00C3A5DC /* XCConfigs */,
+				C636C87B2D035BFB0057AB18 /* PongSaver */,
+				C636C87A2D035BFB0057AB18 /* Products */,
 			);
-			name = PongSaver;
 			sourceTree = "<group>";
 		};
-		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+		C636C87A2D035BFB0057AB18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
-				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
-			);
-			name = "Frameworks and Libraries";
-			sourceTree = "<group>";
-		};
-		089C167CFE841241C02AAC07 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8D255AD20486D3F9007BF209 /* Info.plist */,
-				C2701BB90A5E0B5800E7E7EF /* rebound.aiff */,
-				C2701BBA0A5E0B5800E7E7EF /* launch.aiff */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		08FB77AFFE84173DC02AAC07 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				F50079790118B23001CA0E54 /* PongSaverView.h */,
-				F500797A0118B23001CA0E54 /* PongSaverView.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
-				06F27B2DFFEEEFEF11CA0E56 /* ScreenSaver.framework */,
-			);
-			name = "Linked Frameworks";
-			sourceTree = "<group>";
-		};
-		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				089C1672FE841209C02AAC07 /* Foundation.framework */,
-				089C167FFE841241C02AAC07 /* AppKit.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		19C28FB8FE9D52D311CA2CBB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8D255AD30486D3F9007BF209 /* PongSaver.saver */,
+				C636C8792D035BFB0057AB18 /* PongSaver.saver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5289BA11194BDC5B00C3A5DC /* XCConfigs */ = {
-			isa = PBXGroup;
-			children = (
-				5289BA12194BDC5B00C3A5DC /* Application Debug FAT.xcconfig */,
-				5289BA13194BDC5B00C3A5DC /* Application Debug.xcconfig */,
-				5289BA14194BDC5B00C3A5DC /* Application Release FAT.xcconfig */,
-				5289BA15194BDC5B00C3A5DC /* Application Release MAS.xcconfig */,
-				5289BA16194BDC5B00C3A5DC /* Application Release.xcconfig */,
-				5289BA17194BDC5B00C3A5DC /* Basic Debug FAT.xcconfig */,
-				5289BA18194BDC5B00C3A5DC /* Basic Debug.xcconfig */,
-				5289BA19194BDC5B00C3A5DC /* Basic Release FAT.xcconfig */,
-				5289BA1A194BDC5B00C3A5DC /* Basic Release MAS.xcconfig */,
-				5289BA1B194BDC5B00C3A5DC /* Basic Release.xcconfig */,
-				5289BA1C194BDC5B00C3A5DC /* Dylib Debug FAT.xcconfig */,
-				5289BA1D194BDC5B00C3A5DC /* Dylib Debug.xcconfig */,
-				5289BA1E194BDC5B00C3A5DC /* Dylib Release FAT.xcconfig */,
-				5289BA1F194BDC5B00C3A5DC /* Dylib Release MAS.xcconfig */,
-				5289BA20194BDC5B00C3A5DC /* Dylib Release.xcconfig */,
-				5289BA21194BDC5B00C3A5DC /* Framework Debug FAT.xcconfig */,
-				5289BA22194BDC5B00C3A5DC /* Framework Debug.xcconfig */,
-				5289BA23194BDC5B00C3A5DC /* Framework Release FAT.xcconfig */,
-				5289BA24194BDC5B00C3A5DC /* Framework Release MAS.xcconfig */,
-				5289BA25194BDC5C00C3A5DC /* Framework Release.xcconfig */,
-				5289BA26194BDC5C00C3A5DC /* Tests Debug FAT.xcconfig */,
-				5289BA27194BDC5C00C3A5DC /* Tests Debug.xcconfig */,
-				5289BA28194BDC5C00C3A5DC /* Tests Release FAT.xcconfig */,
-				5289BA29194BDC5C00C3A5DC /* Tests Release MAS.xcconfig */,
-				5289BA2A194BDC5C00C3A5DC /* Tests Release.xcconfig */,
-			);
-			name = XCConfigs;
-			path = ../../process/buildconfigs/build/XCConfigs;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C636C8742D035BFB0057AB18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		8D255AC50486D3F9007BF209 /* PongSaver */ = {
+		C636C8782D035BFB0057AB18 /* PongSaver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF7AD72D08BB986600CE4634 /* Build configuration list for PBXNativeTarget "PongSaver" */;
+			buildConfigurationList = C636C8822D035BFB0057AB18 /* Build configuration list for PBXNativeTarget "PongSaver" */;
 			buildPhases = (
-				8D255AC90486D3F9007BF209 /* Resources */,
-				8D255ACB0486D3F9007BF209 /* Sources */,
-				8D255ACD0486D3F9007BF209 /* Frameworks */,
+				C636C8742D035BFB0057AB18 /* Headers */,
+				C636C8752D035BFB0057AB18 /* Sources */,
+				C636C8762D035BFB0057AB18 /* Frameworks */,
+				C636C8772D035BFB0057AB18 /* Resources */,
 			);
 			buildRules = (
-				C2B83B91093A197C00975D56 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				C636C87B2D035BFB0057AB18 /* PongSaver */,
+			);
 			name = PongSaver;
-			productInstallPath = "$(HOME)/Library/Screen Savers";
+			packageProductDependencies = (
+			);
 			productName = PongSaver;
-			productReference = 8D255AD30486D3F9007BF209 /* PongSaver.saver */;
+			productReference = C636C8792D035BFB0057AB18 /* PongSaver.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		089C1669FE841209C02AAC07 /* Project object */ = {
+		C636C8702D035BFB0057AB18 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 9999;
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					8D255AC50486D3F9007BF209 = {
-						DevelopmentTeam = NM4ZX45CU5;
-						ProvisioningStyle = Manual;
+					C636C8782D035BFB0057AB18 = {
+						CreatedOnToolsVersion = 16.1;
 					};
 				};
 			};
-			buildConfigurationList = EF7AD73108BB986600CE4634 /* Build configuration list for PBXProject "PongSaver" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 1;
+			buildConfigurationList = C636C8732D035BFB0057AB18 /* Build configuration list for PBXProject "PongSaver" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				en,
+				Base,
 			);
-			mainGroup = 089C166AFE841209C02AAC07 /* PongSaver */;
+			mainGroup = C636C86F2D035BFB0057AB18;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C636C87A2D035BFB0057AB18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D255AC50486D3F9007BF209 /* PongSaver */,
+				C636C8782D035BFB0057AB18 /* PongSaver */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8D255AC90486D3F9007BF209 /* Resources */ = {
+		C636C8772D035BFB0057AB18 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2701BBB0A5E0B5800E7E7EF /* rebound.aiff in Resources */,
-				C2701BBC0A5E0B5800E7E7EF /* launch.aiff in Resources */,
-				529BA65915707A5B0081FBA9 /* Configure.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8D255ACB0486D3F9007BF209 /* Sources */ = {
+		C636C8752D035BFB0057AB18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D255ACC0486D3F9007BF209 /* PongSaverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		529BA65715707A5B0081FBA9 /* Configure.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				529BA65815707A5B0081FBA9 /* English */,
-			);
-			name = Configure.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		5289BA2B194BDC8400C3A5DC /* Debug FAT */ = {
+		C636C8802D035BFB0057AB18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-			};
-			name = "Debug FAT";
-		};
-		5289BA2C194BDC8400C3A5DC /* Debug FAT */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5289BA17194BDC5B00C3A5DC /* Basic Debug FAT.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = PongSaver;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				WRAPPER_EXTENSION = saver;
-			};
-			name = "Debug FAT";
-		};
-		5289BA2D194BDC8C00C3A5DC /* Release FAT */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Release FAT";
-		};
-		5289BA2E194BDC8C00C3A5DC /* Release FAT */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5289BA19194BDC5B00C3A5DC /* Basic Release FAT.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				DEVELOPMENT_TEAM = NM4ZX45CU5;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = PongSaver;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				WRAPPER_EXTENSION = saver;
-			};
-			name = "Release FAT";
-		};
-		EF7AD72E08BB986600CE4634 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5289BA18194BDC5B00C3A5DC /* Basic Debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = PongSaver;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				WRAPPER_EXTENSION = saver;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		EF7AD72F08BB986600CE4634 /* Release */ = {
+		C636C8812D035BFB0057AB18 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5289BA1B194BDC5B00C3A5DC /* Basic Release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				DEVELOPMENT_TEAM = NM4ZX45CU5;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = PongSaver;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				WRAPPER_EXTENSION = saver;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		EF7AD73208BB986600CE4634 /* Debug */ = {
+		C636C8832D035BFB0057AB18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 43;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = SG6DU88C24;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = PongSaverView;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enjoygineering.PongSaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
 		};
-		EF7AD73308BB986600CE4634 /* Release */ = {
+		C636C8842D035BFB0057AB18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 43;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = SG6DU88C24;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = PongSaverView;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enjoygineering.PongSaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EF7AD72D08BB986600CE4634 /* Build configuration list for PBXNativeTarget "PongSaver" */ = {
+		C636C8732D035BFB0057AB18 /* Build configuration list for PBXProject "PongSaver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF7AD72E08BB986600CE4634 /* Debug */,
-				5289BA2C194BDC8400C3A5DC /* Debug FAT */,
-				EF7AD72F08BB986600CE4634 /* Release */,
-				5289BA2E194BDC8C00C3A5DC /* Release FAT */,
+				C636C8802D035BFB0057AB18 /* Debug */,
+				C636C8812D035BFB0057AB18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Release FAT";
+			defaultConfigurationName = Release;
 		};
-		EF7AD73108BB986600CE4634 /* Build configuration list for PBXProject "PongSaver" */ = {
+		C636C8822D035BFB0057AB18 /* Build configuration list for PBXNativeTarget "PongSaver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF7AD73208BB986600CE4634 /* Debug */,
-				5289BA2B194BDC8400C3A5DC /* Debug FAT */,
-				EF7AD73308BB986600CE4634 /* Release */,
-				5289BA2D194BDC8C00C3A5DC /* Release FAT */,
+				C636C8832D035BFB0057AB18 /* Debug */,
+				C636C8842D035BFB0057AB18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Release FAT";
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+	rootObject = C636C8702D035BFB0057AB18 /* Project object */;
 }
